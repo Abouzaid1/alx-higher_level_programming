@@ -5,7 +5,7 @@
 class Square:
     """Square Class
     Arg:
-    size (int): size sqaure 
+        size (int): size sqaure 
     """
     def __init__(self,size):
         self.__size = size
