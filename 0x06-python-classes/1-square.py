@@ -3,9 +3,10 @@
 
 
 class Square:
-    """Square Class
-    Arg:
-        size (int): size sqaure 
-    """
+    """A square class"""
     def __init__(self,size):
+        """Square Class
+        Arg:
+            size (int): size sqaure 
+        """
         self.__size = size
