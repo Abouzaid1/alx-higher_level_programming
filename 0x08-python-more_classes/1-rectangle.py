@@ -10,12 +10,12 @@ class Rectangle:
         """Initialize the first instance of a Rectangle"""
         self.width = width
         self.height = height
-    
+
     @property
     def width(self):
         """this function get the width of the rectangle"""
         return (self._Rectangle__width)
-    
+
     @width.setter
     def width(self, value):
         """this function set the width of the rectangle"""
@@ -24,12 +24,12 @@ class Rectangle:
         if value < 0:
             raise ValueError("width must be >= 0")
         self._Rectangle__width = value
-    
+
     @property
     def height(self):
         """this function get the height of the rectangle"""
         return (self._Rectangle__height)
-    
+
     @height.setter
     def height(self, value):
         """this function set the hight of the rectangle"""
