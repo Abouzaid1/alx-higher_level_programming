@@ -5,7 +5,7 @@
 class Rectangle:
     """Represent a rectangle."""
 
-    
+
     def __init__(self, width=0, height=0):
         """Initialize the first instance of a Rectangle"""
         self.width = width
@@ -14,7 +14,7 @@ class Rectangle:
     @property
     def width(self):
         """this function get the width of the rectangle"""
-        return self._Rectangle__width
+        return (self._Rectangle__width)
     
     @width.setter
     def width(self, value):
@@ -28,7 +28,7 @@ class Rectangle:
     @property
     def height(self):
         """this function get the height of the rectangle"""
-        return self._Rectangle__height
+        return (self._Rectangle__height)
     
     @height.setter
     def height(self, value):
