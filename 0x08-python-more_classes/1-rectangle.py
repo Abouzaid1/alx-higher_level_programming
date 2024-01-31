@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Define an empty class"""
+"""Define an empty class."""
 
 
 class Rectangle:
@@ -7,7 +7,7 @@ class Rectangle:
 
 
     def __init__(self, width=0, height=0):
-        """Initialize the first instance of a Rectangle
+        """Initialize the first instance of a Rectangle.
 
         Args:
             width (int): The width of the new rectangle.
@@ -18,7 +18,7 @@ class Rectangle:
 
     @property
     def width(self):
-        """Get/set this function get the width of the rectangle"""
+        """Get/set the width of the rectangle."""
         return self.__width
 
     @width.setter
@@ -31,7 +31,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """Get/set this function get the height of the rectangle"""
+        """Get/set the height of the rectangle."""
         return self.__height
 
     @height.setter
