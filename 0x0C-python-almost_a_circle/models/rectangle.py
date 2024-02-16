@@ -83,20 +83,20 @@ class Rectangle(Base):
                    self.__y, self.__width, self.__height)
 
     def __update(self, id=None, width=None, height=None, x=None, y=None):
-        """internal method to update"""
+        '''Internal method that updates instance attributes via */**args.'''
         if id is not None:
-            self.__id == id
+            self.id = id
         if width is not None:
-            self.__width == width
+            self.__width = width
         if height is not None:
-            self.__height == height
+            self.__height = height
         if x is not None:
-            self.__x == x
+            self.__x = x
         if y is not None:
-            self.__y == y
+            self.__y = y
 
     def update(self, *args, **kwargs):
-        """update internal"""
+        '''Updates instance attributes via no-keyword & keyword args.'''
         # print(args, kwargs)
         if args:
             self.__update(*args)
