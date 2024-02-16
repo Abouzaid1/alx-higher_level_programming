@@ -75,3 +75,11 @@ class Rectangle(Base):
         s = '\n' * self.__y + \
             (' ' * self.__x + '#' * self.__width + '\n') * self.__height
         print(s, end='')
+
+    def __str__(self):
+        """srt"""
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.width, self.height, self.x, self.y)
+
+    def update(self, *args):
+        """args"""
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.width, self.height, self.x, self.y)
