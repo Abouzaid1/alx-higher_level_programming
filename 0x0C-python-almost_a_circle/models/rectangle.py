@@ -85,18 +85,19 @@ class Rectangle(Base):
     def __update(self, id=None, width=None, height=None, x=None, y=None):
         """internal method to update"""
         if id is not None:
-            self.id == id
+            self.__id == id
         if width is not None:
-            self.width == width
+            self.__width == width
         if height is not None:
-            self.height == height
+            self.__height == height
         if x is not None:
-            self.x == x
+            self.__x == x
         if y is not None:
-            self.y == y
+            self.__y == y
 
     def update(self, *args, **kwargs):
-        """update"""
+        """update internal"""
+        # print(args, kwargs)
         if args:
             self.__update(*args)
         elif kwargs:
