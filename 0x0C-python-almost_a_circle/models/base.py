@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 class Base():
     """Base model.
 
@@ -8,16 +7,12 @@ class Base():
     Private Class Attributes:
         __nb_object (int): Number of instantiated Bases.
     """
-
     __nb_objects = 0
-
     def __init__(self, id=None):
         """Initialize a new Base.
-
         Args:
             id (int): The identity of the new Base.
         """
-
         if (id is not None):
             self.id = id
         else:
