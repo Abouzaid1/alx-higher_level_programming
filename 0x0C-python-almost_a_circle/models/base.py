@@ -1,7 +1,12 @@
 #!/usr/bin/python3
+"""Module for base class"""
+
+
 class Base():
     """Base model"""
+    
     __nb_objects = 0
+
     def __init__(self, id=None):
         """Initialize a new Base."""
         if id is not None:
