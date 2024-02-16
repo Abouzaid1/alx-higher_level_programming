@@ -80,7 +80,3 @@ class Rectangle(Base):
         """srt"""
         return "[Rectangle] ({}) {}/{} - {}/{}".\
             format(self.id, self.width, self.height, self.x, self.y)
-
-    def update(self, *args):
-        """args"""
-        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.width, self.height, self.x, self.y)
