@@ -1,10 +1,11 @@
 
-def display(width, height):
+def display(width, height, x, y):
     """Display a rectangle of the given width and height."""
-    for i in range(height):
-        row = ""
-        for j in range(width):
-            row += "#"
-        print(row)
+    for i in range(y):
+        print("")
 
-display(1, 2)
+    for i in range(height):
+        print(" " * x ,"#" * width)
+
+
+display(3, 2, 1, 0)
