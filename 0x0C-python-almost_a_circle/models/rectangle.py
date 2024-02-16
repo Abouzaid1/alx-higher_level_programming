@@ -82,7 +82,18 @@ class Rectangle(Base):
             format(type(self).__name__, self.id, self.__x,
                    self.__y, self.__width, self.__height)
 
+    def __update(self, id=None, width=None, height=None, x=None, y=None):
+        if id is not None:
+            self.__id == id
+        if width is not None:
+            self.__width == width
+        if height is not None:
+            self.__height == height
+        if x is not None:
+            self.__x == x
+        if y is not None:
+            self.__y == y
+
     def update(self, *args):
         """update"""
-        return "[{}] ({}) {}/{} - {}/{}".\
-            format(type(self).__name__)
+        self.__update(*args)
