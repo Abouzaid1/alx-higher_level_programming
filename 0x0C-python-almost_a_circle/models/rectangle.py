@@ -69,7 +69,7 @@ class Rectangle(Base):
     def area(self):
         """The area"""
         return self.__width * self.__height
-    
+
     def display(self):
         """The stdout of the rectangle"""
         for i in range(self.__height):
