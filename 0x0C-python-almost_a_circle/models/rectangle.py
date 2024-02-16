@@ -95,6 +95,9 @@ class Rectangle(Base):
         if y is not None:
             self.__y == y
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """update"""
-        self.__update(*args)
+        if args:
+            self.__update(*args)
+        elif kwargs:
+            self.__update(**kwargs)
