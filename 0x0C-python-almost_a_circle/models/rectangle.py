@@ -77,4 +77,4 @@ class Rectangle(Base):
 
     def __str__(self):
         """Over riding str method"""
-        return "{} {}/{} - {}/{}".format(self.id, self.__width, self.__height, self.__x,self.__y)
+        return "({}) {}/{} - {}/{}".format(self.id, self.__width, self.__height, self.__x, self.__y)
