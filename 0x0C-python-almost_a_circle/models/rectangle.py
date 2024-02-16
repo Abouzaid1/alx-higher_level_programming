@@ -72,8 +72,7 @@ class Rectangle(Base):
 
     def display(self):
         """The stdout of the rectangle"""
-        for i in range(self.__y):
-            print("")
+        print("\n" * self.__y ,end="")
         for i in range(self.__height):
             print(" " * self.__x ,"#" * self.__width)
 
