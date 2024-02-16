@@ -74,3 +74,7 @@ class Rectangle(Base):
         """The stdout of the rectangle"""
         for i in range(self.__height):
             print("#" * self.__width)
+
+    def __str__(self):
+        """Over riding str method"""
+        return "{} {}/{} - {}/{}".format(self.id, self.__width, self.__height, self.__x,self.__y)
