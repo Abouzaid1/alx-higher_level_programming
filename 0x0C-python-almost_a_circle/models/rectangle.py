@@ -83,6 +83,7 @@ class Rectangle(Base):
                    self.__y, self.__width, self.__height)
 
     def __update(self, id=None, width=None, height=None, x=None, y=None):
+        """internal method to update"""
         if id is not None:
             self.__id == id
         if width is not None:
