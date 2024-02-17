@@ -2,6 +2,7 @@
 """Module for base class"""
 from json import dumps
 
+
 class Base():
     """Base model"""
 
