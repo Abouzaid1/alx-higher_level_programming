@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """Module for base class"""
-from json import dumps, loads
-import csv
+from json import dumps
 
 class Base():
     """Base model"""
