@@ -87,13 +87,13 @@ class Rectangle(Base):
         if id is not None:
             self.id = id
         if width is not None:
-            self.__width = width
+            self.width = width
         if height is not None:
-            self.__height = height
+            self.height = height
         if x is not None:
-            self.__x = x
+            self.x = x
         if y is not None:
-            self.__y = y
+            self.y = y
 
     def update(self, *args, **kwargs):
         '''Updates instance attributes via no-keyword & keyword args.'''
@@ -102,3 +102,4 @@ class Rectangle(Base):
             self.__update(*args)
         elif kwargs:
             self.__update(**kwargs)
+
